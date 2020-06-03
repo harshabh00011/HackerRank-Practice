@@ -1,0 +1,26 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner scan=new Scanner(System.in);
+         int T = scan.nextInt();
+         for(int j=0;j<T;j++)
+         {
+        int val = scan.nextInt();
+
+for(int i=2; i<=val/i; i++){
+    if(val%i==0) val=1;
+}
+
+if(val==1) System.out.println("Not prime");
+else System.out.println("Prime");
+    }}
+    
+}
+
+
